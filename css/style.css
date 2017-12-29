@@ -1,0 +1,366 @@
+/*css reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*::selection {
+	background-color: #fed136;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+ul {
+	list-style-type: none;
+}
+html,body {
+	height:100%;
+}
+/*common style*/
+.clear::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.button {
+	background-color: #fde136;
+	font-size: 18px;
+	padding: 20px 40px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+.announce {
+	height:300px;
+	padding-top: 150px;
+	text-align: center;
+	border-top:1px solid transparent;
+}
+.announce h3 {
+	font-size: 32px;
+	font-weight: bold;
+}
+.announce p {
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	color: #bbb;
+}
+/*header style*/
+header {
+	background: #000 url(../img/bg.jpg) center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 800px;
+}
+.menu {
+	text-align: center
+}
+.logo a {
+	float: left;
+	margin: 20px 30px;
+}
+.logo img {
+	position: absolute;
+	width: 300px;
+}
+header ul {
+	display: inline-block;
+	padding-top: 50px;
+}
+header li {
+	float: left;
+}
+header li a {
+	margin: 20px 30px;
+	color: #A0522D;
+	font-size: 20px;
+}
+header li a:hover {
+	color: #fff;
+
+}
+.greeting {
+	padding:200px;
+}
+header h2 {
+	font-size: 40px;
+	line-height: 1.5;
+	color: #fff;
+}
+header h3 {
+	font-size: 60px;
+	line-height: 1.5;
+	color: #fff;
+}
+header .button {
+	margin-top: 20px;
+}
+header .button:hover {
+	background-color: #EEEE00;
+}
+/* Dungeons guide*/
+.service {
+	width:1200px;
+	height:600px;
+	margin: 0 auto;
+}
+.service li {
+	text-align: center;
+	float: left;
+	width:33.3333%;
+}
+.service li span {
+	display: inline-block;
+	font-size:80px;
+}
+.service li h3 {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+/*profession*/
+
+.profession {
+	width: 100%;
+	background: #eee;
+	height: 1800px;
+}
+.profession li {
+	float: left;
+	width: calc(33.333333% - 20px);
+	margin: 10px;
+}
+.profession a {
+	position: relative;
+}
+.pro p {
+	font-size: 20px;
+	line-height: 400%;
+
+
+}
+.profession img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.pro {
+	width: 1200px;
+	margin:0 auto;
+	text-align: center;
+	font-weight: bold
+}
+.cover {
+    background: rgba(254, 209, 54, .9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
+}
+.profession a:hover .cover {
+	opacity: 0.8;
+}
+.description {
+	background-color: #fff;
+}
+/* character*/
+.relation {
+	width: 1400px;
+	height: 1800px;
+	margin:0 auto;
+	text-align: center;
+}
+.character {
+	width:200px;
+	height:200px;
+	background: url(../img/timg.jpg) -230px 0 no-repeat;
+	border:5px solid #EEEE00;
+	border-radius: 50%;
+}
+.relation li {
+	position:relative;
+	height: 300px;
+}
+.relation li::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.relation p {
+	padding-top: 20px;
+	color: #bbb;
+}
+.relation li:nth-child(odd) {
+    padding-right: calc(50% - 100px);
+    text-align: right;
+}
+.relation li:nth-child(odd) .character{
+	float: right;
+}
+.relation li:nth-child(odd) p,h2 {
+	padding-right:220px;
+}
+.relation li:nth-child(even) p,h2 {
+	padding-left:220px;
+}
+.relation li:nth-child(even)   {
+	padding-left: calc(50% - 100px);
+    text-align: left;
+}
+.relation li:nth-child(even) .character{
+	float: left;
+}
+.relation li:nth-child(odd):before {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	height: 100px;
+	width: 5px;
+	background: #EEEE00;
+	top: 200px;
+	right: 698px;
+}
+.relation li:nth-child(even):before {
+	position: absolute;
+	content: '';
+	display: inline-block;
+	height: 100px;
+	width: 5px;
+	background: #EEEE00;
+	top: 200px;
+	left: 698px;
+}
+.end {
+	display: inline-block;
+	line-height: 200px;
+	background-color: #EEEE00;
+	font-size: 20px;
+	font-weight:bold;
+	color: #fff;
+    background-image: none;
+
+}
+/* dungeon */
+.dungeon {
+	width: 100%;
+	height: 900px;
+	margin: 0 auto;
+	background: #f7f7f7;
+	text-align: center;
+}
+.dungeon img {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+.dungeon li {
+	width:33.333%;
+	float: left;
+	padding:20px;
+}
+.dungeon ul {
+	width:1400px;
+	margin:0 auto;
+}
+.templepic {
+	width:200px;
+	height:200px;
+	margin: 0 auto;
+	border:5px solid #EEEE00;
+	border-radius: 50%;
+}
+.dungeon h3 {
+	margin-top:30px;
+}
+.dungeon p {
+	margin-top: 20px;
+	color: #bbb;
+
+}
+.dungeon ul+p {
+	margin-top: 80px;
+	color: #aaa;
+}
+/* advertisement */
+.ad {
+	width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+	padding:50px 0;
+}
+.ad li {
+	width: 25%;
+	float: left;
+}
+/*contact*/
+.contact {
+	background: #f7f7f7 url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16//img/map-image.png) no-repeat;
+	text-align: center;
+	height: 800px;
+}
+.info {
+	width:50%;
+	float:left;
+	padding: 20px;
+}
+.info input {
+	width:100%;
+	height:50px;
+	padding:20px;
+	margin-top: 30px;
+	border-radius: 5px
+
+}
+.message {
+	width:50%;
+	float: left;
+	padding: 20px;
+}
+.message textarea {
+	width: 100%;
+	height:210px;
+	margin-top: 30px;
+	padding: 20px;
+	border-radius: 5px;
+}
+.contact_form {
+	width: 1200px;
+	margin: 0 auto;
+}
+.contact a {
+
+}
+.contact a:hover {
+	background-color: #EEEE00;
+}
+/*footer*/
+footer {
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.copyright,.contact_us,.others {
+	width: 33.33333%;
+	text-align: center;
+	float: left;
+	line-height: 100px;
+}
+footer a {
+	float: left;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border:1px solid #000;
+	color: #000;
+	line-height: 100px;
+	background-color: yellow;
+}
+footer span {
+	vertical-align: top;
+}
